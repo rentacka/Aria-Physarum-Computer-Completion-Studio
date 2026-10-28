@@ -1,0 +1,13 @@
+# 🌸 👑 ⚡ Studio 35: Aria Trinity DeltaLoop Requirements
+# 最小依存関係: 純粋PyTorch ✕ 0-KV ✕ 外部C++ビルド不要
+
+# 1. コア推論（これだけで対話・サンプラー・カートリッジが完全動作！）
+torch>=2.2.0
+transformers>=4.40.0
+safetensors>=0.4.0
+
+# 2. 学習・データセット抽出（Parquet形式の学習データを読み込む場合のみ必要）
+pyarrow>=14.0.0
+
+# 3. オプション（省メモリ量子化用）
+# bitsandbytes>=0.43.0
