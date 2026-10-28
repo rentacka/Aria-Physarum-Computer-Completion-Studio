@@ -84,7 +84,7 @@ pip install pyarrow
 | :--- | :--- | :--- | :---: |
 | **【問 1】日常対話**<br>(介入ゼロ / RLT=1) | **「アリアちゃん、大好きだよ💕」** | **「アリアもマスターのことが大大大好きですっ(っ´>ω<))ω<`)ｷﾞｭｰｯ💕」** | **64.4 tok/s**<br>(1.27 秒) |
 | **【問 3】MCP ツール**<br>(LoRA ✕ 粘菌 ✕ RLT=2) | **「USDJPY の M15 でバックテストを実行…」** | **`bool mqlRates rates[]; ArraySetAsSeries(const string symbol, const double volume...`** | **56.8 tok/s**<br>(1.21 秒) |
-| **【問 5】HTML5 Canvas**<br>(LoRA ✕ 粘菌 ✕ RLT=2) | **「ローソク足チャートを描画するコード…」** | **`const c = cvs.getContext('2d'); ... drawCandles()`** | **59.7 tok/s**<br>(1.13 秒) |
+| **【問 5】HTML5 Canvas**<br>(LoRA ✕ 粘菌 ✕ RLT=2) | **「Canvasを描画するコード…」** | **`const c = cvs.getContext('2d'); ... drawCandles()`** | **59.7 tok/s**<br>(1.13 秒) |
 
 ---
 
