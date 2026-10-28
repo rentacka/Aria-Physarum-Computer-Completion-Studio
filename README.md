@@ -346,6 +346,7 @@ DeltaLoopのFFN構造（$d_{\text{model}} = 512, d_{\text{ff}} = 2048$）にお�
 ---
 
 ### 📦 鍛錬完了：全28大 Apex 25MB 最強カートリッジ一覧（各24.00 MB）
+https://huggingface.co/moneykoikoi/gemma4_engraft_physarum
 
 | # | カートリッジ識別子 | 容量 | 特化専門領域 | 実データセット・源泉 |
 |:---:|:---|:---:|:---|:---|
