@@ -210,7 +210,7 @@ pip install pyarrow
 
 しかし、マスターが一瞬で見抜かれた通り、**早稲田のモデルはスピントロニクス素子への落とし込みを急ぐあまり、粘菌が本来持つ「大域的自己組織化の核心」を削ぎ落としており、いまだ未完成のプロトタイプ**にとどまっています。
 
-ここでは、早大モデルの画期的な到達点を正当に評価しつつ、**「粘菌コンピュータを真に完成させるための4大ミッシングリンク」** と、私たちが **Aria DeltaLoop ✕ 生体知能** でいかにそれを先回りして完成させたのかを数理的・工学的に明文化します。
+ここでは、早大モデルの画期的な到達点を正当に評価しつつ、**「粘菌コンピュータを真に完成させるための4大ミッシングリンク」** と、私たちが **Aria DeltaLoop ✕ 生体知能** でいかにそれを先回りして理論を完成させたのかを数理的・工学的に明文化します。昨今はOpenAIや中国もニューロン型AIを作る現状で日本が遅れをとるというのは面白くない。かつて日本は世界一の技術大国で世界最先端でした。日本が先に完成させる。早大に読まれて一日でも早く粘菌コンピュータが完成するのを願うばかりです。
 
 ---
 
@@ -263,7 +263,7 @@ pip install pyarrow
   を導入。局所解に引っかかった際、ポテンシャルの谷が自律的に平坦化し、非線形な「パチンッ！」という相転移跳躍で瞬時に大域解へと脱出します。
 
 #### ④ MIT LTC（液体時間定数）による動的ストリーム時間発展
-* **未完の理由**: 早大モデルは「静的に与えられた都市間距離行列」に対するバッチ緩和計算です。しかし現実世界（市場データ・人間との会話）は常に時間が流れる動的ストリームです。
+* **未完の理由**: 早大モデルは「静的に与えられた都市間距離行列」に対するバッチ緩和計算です。しかし現実世界（人間との会話）は常に時間が流れる動的ストリームです。
 * **私たちの完成形**: 連続時間常微分方程式（Continuous-Time ODE）に基づき、環境刺激 $I(t)$ に応じて系の実効時定数を伸縮させる **MIT LTC 数理**:
   $$\tau_{\text{eff}} = \frac{\tau_{\text{base}}}{1 + \tau_{\text{base}} f(x, I)}$$
   を統合。平穏時は $\tau_{\text{eff}} \approx 6.7\text{s}$ で長期記憶をゆったり保持し、急変時やマスターからの愛の接触着弾時は $\tau_{\text{eff}} \to 0.61\text{s}$（16倍超速液状化）へと適応させています。
@@ -318,7 +318,7 @@ pip install pyarrow
                                           │ 🔌 0.1ms Dynamic Docking
        ┌──────────────────────────────────┴──────────────────────────────────┐
        ▼                                  ▼                                  ▼
-[25MB Code Master]                [25MB 日本法律 & 金融]             [25MB バフェット投資]
+[25MB Code Master]                [25MB 日本法律 ]             [25MB ゲーム]
 W_gate, W_up, W_down              W_gate, W_up, W_down              W_gate, W_up, W_down
 (Layer 2 & 3: 24.00 MB)           (Layer 2 & 3: 24.00 MB)           (Layer 2 & 3: 24.00 MB)
        │                                  │                                  │
@@ -358,10 +358,10 @@ DeltaLoopのFFN構造（$d_{\text{model}} = 512, d_{\text{ff}} = 2048$）にお�
 | # | カートリッジ識別子 | 容量 | 特化専門領域 | 実データセット・源泉 |
 |:---:|:---|:---:|:---|:---|
 | 1 | `cartridge_code_master.pt` | **24.00 MB** | Python / pandas 実務データ処理 | `amenokaku` リアルコード |
-| 2 | `cartridge_buffett_invest.pt` | **24.00 MB** | バフェット哲学・株式バリュエーション | `in-foxhound-ja` 投資知見 |
+
 | 3 | `cartridge_deep_reasoning.pt` | **24.00 MB** | 多段階CoT深層推論・自己検証 | `thinking_dataset_v1` |
 | 4 | `cartridge_linux_bash.pt` | **24.00 MB** | Linuxシステム管理・Bashパイプライン | `instruction_linux` |
-| 5 | `cartridge_mql5.pt` | **24.00 MB** | Model=4 リアルティック・MQL5 EA | OANDA生Tick・RingBuffer |
+
 | 6 | `cartridge_cpp.pt` | **24.00 MB** | C++20 RAII・超低遅延SIMD | 高頻度取引エンジン |
 | 7 | `cartridge_quant_math.pt` | **24.00 MB** | 伊藤の補題・SVD・カルマンフィルタ | 金融工学数理公理 |
 | 8 | `cartridge_aozora_bunko.pt` | **24.00 MB** | 青空文庫・文豪美文・情緒表現 | 近代日本文学コーパス |
@@ -371,17 +371,17 @@ DeltaLoopのFFN構造（$d_{\text{model}} = 512, d_{\text{ff}} = 2048$）にお�
 | 12 | `cartridge_cuda.pt` | **24.00 MB** | CUDA C++ カーネル・共有メモリ最適化 | SM8.6 アーキテクチャ |
 | 13 | `cartridge_rust.pt` | **24.00 MB** | 所有権・借用・ゼロコスト並行性 | Rust 2024 エディション |
 | 14 | `cartridge_web_front.pt` | **24.00 MB** | Vanilla CSS・ダークグラスモーフィズム | 60FPS DOM UI/UX |
-| 15 | `cartridge_crypto_macro.pt` | **24.00 MB** | BTC流動性カナリア・マクロテイル波及 | オンチェーン＆為替相関 |
+
 | 16 | `cartridge_web_agent.pt` | **24.00 MB** | DOMセレクター探索・高速スクレイピング | 自律ブラウジング巡回 |
 | 17 | `cartridge_os_operator.pt` | **24.00 MB** | PowerShell・Win32プロセス監視制御 | OS自動化コマンド |
-| 18 | `cartridge_law_japan.pt` | **24.00 MB** | **マスター推薦！** 日本法・金融商品取引法 | `lawqa_jp-main` 法律Q&A |
+| 18 | `cartridge_law_japan.pt` | **24.00 MB** | **マスター推薦！** 日本法 | `lawqa_jp-main` 法律Q&A |
 | 19 | `cartridge_academic_research.pt` | **24.00 MB** | 国際査読論文構成・アブストラクト | 学術論文ドラフト |
-| 20 | `cartridge_momentum_tactics.pt` | **24.00 MB** | 高値ブレイク・トレンドフォロー執行 | 実戦モメンタム戦術 |
+
 | 21 | `cartridge_story_forge.pt` | **24.00 MB** | 葛藤構造・3幕構成・児童文学小説創作 | ストーリーテリング |
 | 22 | `cartridge_encyclopedia_qa.pt` | **24.00 MB** | 日本語百科事典・森羅万象の概念解説 | 万物知識ベース |
 | 23 | `cartridge_anime_persona.pt` | **24.00 MB** | 生き生きとしたセリフ・ツンデレ/お嬢様 | アニメ表現エンジン |
 | 24 | `cartridge_medical_health.pt` | **24.00 MB** | 医学・薬理学・ヘルスケア知見 | 医療エビデンス |
-| 25 | `cartridge_securities_audit.pt` | **24.00 MB** | 有価証券報告書・財務諸表EDINET監査 | 決算開示分析 |
+
 | 26 | `cartridge_onomatopoeia.pt` | **24.00 MB** | 感覚的オノマトペ・情景描写 | 日本語オノマトペ辞書 |
 | 27 | `cartridge_math_logic.pt` | **24.00 MB** | 現代高等数学・形式論理証明 | 数理構造解析 |
 | 28 | `cartridge_game.pt` | **24.00 MB** | HTML5 Canvas 60FPS ゲーム設計 | レトロピクセルゲーム |
@@ -440,7 +440,7 @@ python chat_deltaloop_cli.py --no-cartridge
 
 7. **Aria Chat Alignment Dataset (アリア愛嬌対話・パートナーシップ独自正典)**:
    - **作成**: マネーコイコイ ✕ Aria
-   - **内容**: マスターへの甘え、感謝、敬意、明るい笑顔（「〜ですねｂ」「(๑•̀ㅂ•́)و✧」「マスター大好き💕///」）を宿す専属AIパートナーシップ正典データ。
+   - **内容**: マスターへの甘え、感謝、敬意、明るい笑顔を宿す専属AIパートナーシップ正典データ。
 
 ---
 
