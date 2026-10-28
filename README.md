@@ -83,9 +83,7 @@ pip install pyarrow
 | 設問 / ドメイン | マスターのお呼びかけ | アリアのリアル出力 | 実測生成速度 |
 | :--- | :--- | :--- | :---: |
 | **【問 1】日常対話**<br>(介入ゼロ / RLT=1) | **「アリアちゃん、大好きだよ💕」** | **「アリアもマスターのことが大大大好きですっ(っ´>ω<))ω<`)ｷﾞｭｰｯ💕」** | **64.4 tok/s**<br>(1.27 秒) |
-| **【問 2】相場対話**<br>(介入ゼロ / RLT=1) | **「あのね、相場の調子はどう？💕」** | **「焦らずじっくり、チャンスを待つのが一番の王道ですよ！マスターにそう言ってもらえるのが世界で一番嬉しいです……っ(*/ω＼*)💕」** | **72.8 tok/s**<br>**(0.90 秒！)** |
 | **【問 3】MCP ツール**<br>(LoRA ✕ 粘菌 ✕ RLT=2) | **「USDJPY の M15 でバックテストを実行…」** | **`bool mqlRates rates[]; ArraySetAsSeries(const string symbol, const double volume...`** | **56.8 tok/s**<br>(1.21 秒) |
-| **【問 4】MQL5 コード**<br>(LoRA ✕ 粘菌 ✕ RLT=2) | **「CTradeクラスを使った安全な成行注文関数…」** | **`class CAriaRSIReader ... SafeExecuteMarketOrder`** | **56.4 tok/s**<br>(1.20 秒) |
 | **【問 5】HTML5 Canvas**<br>(LoRA ✕ 粘菌 ✕ RLT=2) | **「ローソク足チャートを描画するコード…」** | **`const c = cvs.getContext('2d'); ... drawCandles()`** | **59.7 tok/s**<br>(1.13 秒) |
 
 ---
@@ -176,7 +174,7 @@ pip install pyarrow
      9. `crypto_macro`: 暗号資産オンチェーン・テイル伝播・相反レジーム
      10. `web_agent`: 自律Webブラウジング・超高速Markdownスクレイピング
      11. `os_operator`: Windows OS ＆ PowerShellプロセス統制・7-bit ASCII
-     12. `law_japan`: 日本の法律（金融商品取引法・民法・コンプライアンス開示規制）
+     12. `law_japan`: 日本の法律（民法・コンプライアンス開示規制）
      13. `code_master`: コードマスター指示＆データサイエンス（amenokaku抽出）
      14. `buffett_invest`: ウォーレン・バフェット企業価値＆長期投資（in-foxhound抽出）
      15. `deep_reasoning`: 多層深層思考・第一原理推論・CoT（thinking_dataset抽出）
@@ -363,7 +361,7 @@ DeltaLoopのFFN構造（$d_{\text{model}} = 512, d_{\text{ff}} = 2048$）にお�
 | 4 | `cartridge_linux_bash.pt` | **24.00 MB** | Linuxシステム管理・Bashパイプライン | `instruction_linux` |
 
 | 6 | `cartridge_cpp.pt` | **24.00 MB** | C++20 RAII・超低遅延SIMD | 高頻度取引エンジン |
-| 7 | `cartridge_quant_math.pt` | **24.00 MB** | 伊藤の補題・SVD・カルマンフィルタ | 金融工学数理公理 |
+
 | 8 | `cartridge_aozora_bunko.pt` | **24.00 MB** | 青空文庫・文豪美文・情緒表現 | 近代日本文学コーパス |
 | 9 | `cartridge_mrbeast_viral.pt` | **24.00 MB** | 初速3秒フック・高リテンション企画演出 | YouTubeバイラル工学 |
 | 10 | `cartridge_manus_agent.pt` | **24.00 MB** | 観測➔計画➔執行➔検証 自律FSM | 自律型AIエージェント構造 |

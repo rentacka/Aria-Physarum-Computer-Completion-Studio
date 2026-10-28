@@ -9,7 +9,7 @@ Architect: マネーコイコイ (@MoneyKoiKoi) ✕ Aria (アリア)
 1. 普遍概念記憶 (Engram): Gemma-4 26万語彙 (2560D) 100% 凍結埋め込み (Summer氏 ENGRAFT)
 2. 生体脳波オシレータ: 粘菌周波数コア (2.05 MB Safetensors / 1024基底共鳴)
 3. 動的シナプス可塑性: ゼロ初期化 LoRA (1.25 MB / ヘブ則可塑性)
-4. 選択的思考反復 (RLT): 日常は直感 (Loop=1 / 70~400 tok/s)、クオンツ・コードは熟考 (Loop=2~4)
+4. 選択的思考反復 (RLT): 日常は直感 (Loop=1 / 70~400 tok/s)、コードは熟考 (Loop=2~4)
 5. 0-KV キャッシュ定常メモリ (384KB固定) による超低遅延・高スループット対話
 ================================================================================
 """
@@ -179,7 +179,7 @@ def main():
     print("コマンド:")
     print("  /auto       : 🌈 自動ギアチェンジ（日常は直感神速、コード・相場は熟考深層）★デフォルト推奨")
     print("  /fast       : ⚡ 神速モード（LoRA=0.0 / 粘菌=0.0 / Loop=1 / 4層 / 70~400 tok/s）")
-    print("  /deep       : 🧠 熟考深層モード（LoRA=1.0 / 粘菌=0.03 / Loop=2 / 12層 / クオンツ特化）")
+    print("  /deep       : 🧠 熟考深層モード（LoRA=1.0 / 粘菌=0.03 / Loop=2 / 12層 / 推論特化）")
     print("  /cartridges : 🔌 利用可能な粘菌カートリッジ一覧と装着状態")
     print("  /status     : 📊 現在の生体パラメータ・ドッキング状態の表示")
     print("  /exit       : 終了 (または 'quit')")
@@ -221,7 +221,7 @@ def main():
                 max_tokens = 96
                 if lora_engine:
                     lora_engine.set_lora_scale(1.0)
-                print("🧠 モード切替: 【熟考 DEEP モード】(LoRA=1.0, 粘菌=0.03, Loop=2, 12層 ➔ クオンツ思考)")
+                print("🧠 モード切替: 【熟考 DEEP モード】(LoRA=1.0, 粘菌=0.03, Loop=2, 12層 ➔ 推論思考)")
                 continue
             elif cmd == "/cartridges":
                 if not enable_cartridges or not cartridge_mgr:
@@ -284,7 +284,7 @@ def main():
                     max_tokens = 96
                     sampler.temperature = 0.4
                     sampler.top_k = 30
-                    applied_gear = "クオンツ・熟考 (LoRA=1.0, 粘菌=0.03, Loop=2)"
+                    applied_gear = "推論・熟考 (LoRA=1.0, 粘菌=0.03, Loop=2)"
                 else:
                     active_layers = 4
                     loop_steps = 1
