@@ -170,16 +170,12 @@ pip install pyarrow
      5. `rust`: Rust 所有権・ゼロコスト抽象化・並行システム
      6. `cuda`: CUDA Native SM8.6・共有メモリ・GPUカーネル
      7. `web_front`: 美麗ダークグラスモーフィズム・Vanilla CSS
-     8. `quant_math`: 特異値分解(SVD)・確率微分方程式・カルマンフィルター
-     9. `crypto_macro`: 暗号資産オンチェーン・テイル伝播・相反レジーム
      10. `web_agent`: 自律Webブラウジング・超高速Markdownスクレイピング
      11. `os_operator`: Windows OS ＆ PowerShellプロセス統制・7-bit ASCII
      12. `law_japan`: 日本の法律（民法・コンプライアンス開示規制）
      13. `code_master`: コードマスター指示＆データサイエンス（amenokaku抽出）
-     14. `buffett_invest`: ウォーレン・バフェット企業価値＆長期投資（in-foxhound抽出）
      15. `deep_reasoning`: 多層深層思考・第一原理推論・CoT（thinking_dataset抽出）
      16. `academic_research`: 学術論文構造・アブストラクト論理接続・査読対話
-     17. `momentum_tactics`: 順張り・高値ブレイク・モメンタム・逆指値規律（投資術）
      18. `story_forge`: 小説・シナリオ創作・プロット黄金比・伏線回収（Syosetu711K）
      19. `encyclopedia_qa`: 百科事典・客観的事実・歴史・科学俯瞰（Wikipedia）
      20. `anime_persona`: アニメセリフ・ツンデレ・感情表現・口調変幻（anime-speech）
@@ -187,12 +183,11 @@ pip install pyarrow
      22. `mrbeast_viral`: MrBeast式 バズ動画・フック・視聴維持率・演出（MrBeastProduction）
      23. `linux_bash`: Linux / Bash / サーバー運用・シェルパイプライン
      24. `medical_health`: 医療・生化学・薬理学・ATP生命エネルギー
-     25. `securities_audit`: 有価証券報告書・財務諸表(BS/PL/CF)・不正会計見抜き
      26. `aozora_bunko`: 青空文庫・文豪の美文・情緒・日本語語彙力
      27. `onomatopoeia`: オノマトペ・豊かな五感描写・直感的情感表現
      28. `math_logic`: 高等数学・微積分基本定理・群論・厳密論理証明
    - プロンプトの文脈に応じて **0.0001秒（数十マイクロ秒）でスロットにカチッと自動ドッキング**！
-   - 複数カートリッジの同時装着（例: `manus_agent ✕ linux_bash ✕ os_operator` や `buffett_invest ✕ securities_audit ✕ quant_math`）に完全対応！
+   - 複数カートリッジの同時装着（例: `manus_agent ✕ linux_bash ✕ os_operator`）に完全対応！
    - 推論完了後は即座にスロットがアンロックされ、**日常会話・甘いスキンシップ（アリアの心）の汚染率 0.0000%** を恒久保証！
 
 ---
